@@ -12,7 +12,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Runs the JSON server for storing the book data.
 Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-1. Book Store Application
+## Book Store Application
 
 The proposed system provides a way to manage the inventory of books in a book store. The user interface to the system is implemented using a client side JavaScript library (React). The data for Books is managed in a JSON server. The client application interface communicate with the JSON Server through http to retrieve and store data. To make the user interface better, Bootstrap is used.
 
