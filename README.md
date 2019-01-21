@@ -1,7 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`
@@ -9,36 +7,63 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### `json-server --watch db.json -p 3001`
 
-### `npm test`
+Runs the JSON server for storing the book data.
+Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Book Store Application
 
-### `npm run build`
+The proposed system provides a way to manage the inventory of books in a book store. The user interface to the system is implemented using a client side JavaScript library (React). The data for Books is managed in a JSON server. The client application interface communicate with the JSON Server through http to retrieve and store data. To make the user interface better, Bootstrap is used.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Following operations should be supported.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+1) View Books
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2) Add Book
 
-### `npm run eject`
+3) Update Book
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4) Delete Book
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+View Books
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* The list of books available should be displayed.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* There should be a search filter option provided to display only a subset of the books based on the search filter. 
 
-## Learn More
+* Buttons should be displayed next to each book entry to allow delete of a book.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Title is displayed as link and user is allowed to click on the link and Update the book info.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Add Book
+
+While adding the book, the following input details should be accepted.
+
+* Title
+
+* Author
+
+* ISBN
+
+* Publication Date
+
+* Publisher
+
+* Price
+
+* Genre (A list of Genres should be displayed for user to select)
+
+* Format (A list of format should be displayed for user to select)
+
+Update Book
+
+When the list of books are displayed, one book can be selected to update at a time.
+
+Title, Author, ISBN, Publication Date, Publisher, Price, Genre and Format should be allowed to be updated.
+
+Note: Book ID should be used as the key to look for Book details and it cannot be modified.
+
+Delete Book
+
+When the list of books are displayed, Delete button is displayed in the table to delete a book at a time.
