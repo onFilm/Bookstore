@@ -1,0 +1,15 @@
+{
+  "book": [
+    {
+      "title": "a",
+      "author": "a",
+      "isbn": "a",
+      "p_name": "a",
+      "p_date": "a",
+      "price": "a",
+      "genre": "Action",
+      "format": "EPDF",
+      "id": 1
+    }
+  ]
+}
